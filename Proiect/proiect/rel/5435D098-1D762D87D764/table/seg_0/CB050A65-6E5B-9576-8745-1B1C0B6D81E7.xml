@@ -1,0 +1,237 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB050A65-6E5B-9576-8745-1B1C0B6D81E7" name="Lol_User">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>B069A86B-EEF6-DAF0-EDBA-17021F6BD685</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="6E5FEDA8-B790-2956-54FB-749AC5DFA0D9">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>804AD47F-13B9-13F4-82C6-F3E368F47CD4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="7F18B09F-43B3-A77B-B2E1-89721F156A89">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>8871F043-F0A4-C7BC-C70F-DA8E615FFA5A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>user_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(name) &gt;= 5"/>
+</checkConstraint>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="EB44B824-4D7F-F880-0E31-36713342EF5A">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>0688491B-E046-951E-787B-AE085588EE07</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>user_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="summoner_name" id="F212E117-B9E1-AF47-C782-7A19630A10ED">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>A7909B04-A5E3-B251-B253-5630499A2B10</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>user_summoner_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(summoner_name) &gt;= 5"/>
+</checkConstraint>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lvl" id="E3C11D53-7A75-7496-5DEB-3B66369B3446">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>0121F2A2-5AD6-768D-F180-595D18F554BD</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>user_lvl_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="lvl &gt;= 1"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rank_solo_duo" id="5E70471F-C1F2-7255-0A95-2C20DFB202D7">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>6CD03688-69CD-9E43-E693-8AD7D48EFFCB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>user_rank_solo_duo_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="GM" description=""/>
+<valueDef value="M" description=""/>
+<valueDef value="U" description=""/>
+</listOfValues>
+<defaultValue>U</defaultValue>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>B1</beginValue>
+<endValue>B5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>D1</beginValue>
+<endValue>D5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>G1</beginValue>
+<endValue>G5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>P1</beginValue>
+<endValue>P5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>S1</beginValue>
+<endValue>S5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="rank_flex" id="DD2D31A1-0E80-30C1-C7EC-852520FA5753">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>5A8029C0-E9C8-EC7D-2DDA-6366627F26C9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>user_user_rank_flex</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="GM" description=""/>
+<valueDef value="M" description=""/>
+<valueDef value="U" description=""/>
+</listOfValues>
+<defaultValue>U</defaultValue>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>B1</beginValue>
+<endValue>B5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>D1</beginValue>
+<endValue>D5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>G1</beginValue>
+<endValue>G5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>P1</beginValue>
+<endValue>P5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>S1</beginValue>
+<endValue>S5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="club_id" id="D7FC28A3-738C-A5E5-BC69-04290E9BE0E4">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>84391FD4-64AE-8324-7047-36A808B71123</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D526F0FA-C07F-BA06-387B-B5CD06BE40BE" referredColumn="2AD8A12E-9890-A320-5003-A10CE58C9E19"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64A55770-6A8B-D58C-4197-F174A61C9290" name="Lol_User_PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>DC47F54D-7127-DAA0-79BC-05A5C2A354F9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E5FEDA8-B790-2956-54FB-749AC5DFA0D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDDA0239-C102-AD04-A4C8-2C4EB6D1D4F3" name="Lol_User_email_UN">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>1F6A7481-CD08-9964-FFD3-014CB93B6D51</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB44B824-4D7F-F880-0E31-36713342EF5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A3C0B8F-6D7C-4178-9C6D-F7C011AC16DD" name="Lol_User_name_UN">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>993A0B15-62FA-4139-1159-7C89513FFDFF</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F18B09F-43B3-A77B-B2E1-89721F156A89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10B8FF61-4AD6-0104-13A4-4CCF6EAB3A44" name="Lol_User_Club_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>4A17C619-4467-EA9E-44B6-600F47AFBE4C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7FC28A3-738C-A5E5-BC69-04290E9BE0E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82968202-4CAE-7E13-73BB-8463EB8A5D82" name="user_skin">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 07:54:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="B3C77F45-C497-A1BB-DC65-03EB99657859">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 07:56:04 UTC</createdTime>
+<generatorID>FAC54A99-95F5-3EC1-D0C8-0CE5ADF9F8F5</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<referedAttribute>804AD47F-13B9-13F4-82C6-F3E368F47CD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="champion_id" id="8FD8B6CA-38A1-E120-4F71-A061476FFE45">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 07:57:07 UTC</createdTime>
+<generatorID>86973535-E7A8-4BB8-4117-DF7E9F6D7020</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<referedAttribute>7A0821FC-D876-3DCC-117D-7E65D02595EF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="skin_id" id="E26E42A9-5308-1E76-097F-345D69A4612E">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 07:55:04 UTC</createdTime>
+<generatorID>DB30E8E1-D07B-12C7-FC8F-8A5F2306D3AB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<referedAttribute>55872C04-06DB-AB56-E691-7E1800CB0CC4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F29E9218-624E-A8F4-2A6C-C4ABD636853F" name="user_skin_uk">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 10:22:40 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>DB30E8E1-D07B-12C7-FC8F-8A5F2306D3AB,FAC54A99-95F5-3EC1-D0C8-0CE5ADF9F8F5,86973535-E7A8-4BB8-4117-DF7E9F6D7020</newElementsIDs>
+<usedAttributes>
+<attributeRef>E26E42A9-5308-1E76-097F-345D69A4612E</attributeRef>
+<attributeRef>B3C77F45-C497-A1BB-DC65-03EB99657859</attributeRef>
+<attributeRef>8FD8B6CA-38A1-E120-4F71-A061476FFE45</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

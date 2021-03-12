@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v12c.StorageDesignOraclev12c>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" propertyParentId="3FD120B5-746D192C8319" propertySourceId="" propertyTargetId=""/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" propertyParentId="3FD120B5-746D192C8319" propertySourceId="" propertyTargetId=""/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" propertyParentId="3FD120B5-746D192C8319" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Trigger" objectID="53A20B3C-03D2-5C07-FD83-68C1040F402B" name="trg_skin_BRIU" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" propertyParentId="3FD120B5-746D192C8319" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Trigger" objectID="8A54EA7D-813B-5362-A14E-17ACF3551D50" name="trg_champion_BRIU" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" propertyParentId="3FD120B5-746D192C8319" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Trigger" objectID="99D9AE0C-D65C-061A-1E6F-DE8B6E206261" name="trg_club_BRIU" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" propertyParentId="3FD120B5-746D192C8319" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.storage.oracle.v12c.StorageDesignOraclev12c>

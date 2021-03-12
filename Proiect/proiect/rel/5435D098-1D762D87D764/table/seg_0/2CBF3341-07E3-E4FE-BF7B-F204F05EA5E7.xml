@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CBF3341-07E3-E4FE-BF7B-F204F05EA5E7" name="user_skin">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>82968202-4CAE-7E13-73BB-8463EB8A5D82</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="B0028E8D-4BFD-8746-5265-D27616ABE146">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>B3C77F45-C497-A1BB-DC65-03EB99657859</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="852654E1-150E-A1EC-9E26-E4C1F7FB30F6" referredColumn="6E5FEDA8-B790-2956-54FB-749AC5DFA0D9"/>
+</associations>
+</Column>
+<Column name="champion_id" id="74F828B3-114B-80AD-3B61-2D4D9D8B7D50">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>8FD8B6CA-38A1-E120-4F71-A061476FFE45</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C335BF3-9474-9E9C-4FB4-A11434F23EE3" referredColumn="4FA32819-F236-8DFD-E04D-2FF203FC718B"/>
+</associations>
+</Column>
+<Column name="skin_id" id="437C85E5-838E-B30D-1798-2FBC1446FDBD">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>E26E42A9-5308-1E76-097F-345D69A4612E</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CFA288C-7BAB-FC23-1893-552CD879994E" referredColumn="6BA1195E-3141-EC3B-895C-966B40698465"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF368C09-5661-4D55-E0CB-D793BE365FB2" name="user_skin_FK_PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>F29E9218-624E-A8F4-2A6C-C4ABD636853F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="437C85E5-838E-B30D-1798-2FBC1446FDBD"/>
+<colUsage columnID="B0028E8D-4BFD-8746-5265-D27616ABE146"/>
+<colUsage columnID="74F828B3-114B-80AD-3B61-2D4D9D8B7D50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDBB69FD-931F-9E97-3902-3B65F739BD98" name="user_skin_Champion_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>86973535-E7A8-4BB8-4117-DF7E9F6D7020</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74F828B3-114B-80AD-3B61-2D4D9D8B7D50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C70DF29-16C4-B684-E9F0-33D27CEA9BD8" name="user_skin_Skin_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>DB30E8E1-D07B-12C7-FC8F-8A5F2306D3AB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="437C85E5-838E-B30D-1798-2FBC1446FDBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C804003-8404-CDBD-008F-FEA63BD4A8D5" name="user_skin_Lol_User_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>FAC54A99-95F5-3EC1-D0C8-0CE5ADF9F8F5</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0028E8D-4BFD-8746-5265-D27616ABE146"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

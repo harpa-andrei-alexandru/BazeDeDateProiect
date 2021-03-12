@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0557DD4C-C105-EBF9-60A5-7D6C02AFCAFA" name="user_champion">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="1CE98F95-ADE3-BDA1-DB7E-49326627F521">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61B9A9F3-749E-7AAB-B27D-48D5050817D6" referredColumn="6E5FEDA8-B790-2956-54FB-749AC5DFA0D9"/>
+</associations>
+</Column>
+<Column name="champion_id" id="72165AD2-3C47-51C4-F328-6A742E696AAA">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C87A189C-B7E9-3922-F0BB-766F85680811" referredColumn="4FA32819-F236-8DFD-E04D-2FF203FC718B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D811EFA-44B0-F5BD-C78A-89976BCBC2DB" name="user_champion_FK_PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CE98F95-ADE3-BDA1-DB7E-49326627F521"/>
+<colUsage columnID="72165AD2-3C47-51C4-F328-6A742E696AAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1ABE70A6-D151-B73E-9174-70795DF9E87A" name="user_champion_FK_Lol_User_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>0517F03E-3E06-FC0F-DBDA-CEEAC34F5132</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CE98F95-ADE3-BDA1-DB7E-49326627F521"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BAA1928-0886-EC56-F48D-2684A3D6D7E8" name="user_champion_FK_Champion_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>0517F03E-3E06-FC0F-DBDA-CEEAC34F5132</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72165AD2-3C47-51C4-F328-6A742E696AAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

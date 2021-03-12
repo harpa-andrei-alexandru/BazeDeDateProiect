@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="38FC4C98-3E07-59E9-766C-0A7165BB4AC3" name="Resources">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>096A204B-485A-6F9F-504F-A98C54F5EB2D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="riot_points" id="1BE5A1C0-AFC3-3271-C4AF-8C5A91F07A0C">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>CCBEE11F-A158-A383-00CC-59B73FEC70E2</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>resources_rp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="riot_points &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="blue_essence" id="5CFE5803-3A9C-9185-3B62-6F388D0988A6">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>AC57BAC9-46FE-EBE0-4527-9114780B9A2A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>resources_be_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="blue_essence &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orange_essence" id="8051D58F-CC42-FC6D-1506-95E1F0D5ECA7">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>5E5C2A8D-F3E1-67BB-9389-6385D906303E</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>resources_oe_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="orange_essence &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="6675BC3F-2A34-B564-CC42-A456A1F602C2">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>EB89658F-E981-1AFC-4699-9A9EFAF31684</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27C06089-1B2E-2C80-3A70-3C3C10691858" referredColumn="6E5FEDA8-B790-2956-54FB-749AC5DFA0D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1B6B839-2786-EBE6-F220-BA48325E0368" name="Resources__IDX">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>43DC7979-08CC-A9E6-F840-1D5B080333A4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6675BC3F-2A34-B564-CC42-A456A1F602C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7E6CD74-3728-DAF2-C85A-DBD30889F62C" name="Resources_Lol_User_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>43DC7979-08CC-A9E6-F840-1D5B080333A4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6675BC3F-2A34-B564-CC42-A456A1F602C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

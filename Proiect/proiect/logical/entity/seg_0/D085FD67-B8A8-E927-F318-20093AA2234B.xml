@@ -1,0 +1,221 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D085FD67-B8A8-E927-F318-20093AA2234B" name="Champion">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 15:59:43 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="champion_id" id="7A0821FC-D876-3DCC-117D-7E65D02595EF">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 22:10:59 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="champion_name" id="3DBEE869-3A48-020E-662A-7EBAD7A334B0">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:06:51 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>champion_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(champion_name) &gt;= 3"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price_rp" id="10CEE32D-24A7-A35A-978E-BF4D526C2CEE">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:25:34 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>champion_price_rp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<listOfValues>
+<valueDef value="260" description=""/>
+<valueDef value="585" description=""/>
+<valueDef value="790" description=""/>
+<valueDef value="880" description=""/>
+<valueDef value="975" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price_blue_essence" id="141F4E8C-EA2E-FAFF-8F45-6355DCE57B44">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:25:55 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>champion_price_blue_essence_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="1350" description=""/>
+<valueDef value="3150" description=""/>
+<valueDef value="450" description=""/>
+<valueDef value="4800" description=""/>
+<valueDef value="6300" description=""/>
+<valueDef value="7800" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="release_date" id="2D5CFACC-801E-1C86-D985-8FF6BB1FA06E">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:07:38 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="health" id="24A8CE13-04F6-63D3-5718-A9A6DDB8EE7E">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:08:02 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>champion_health_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>480</beginValue>
+<endValue>740</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="armor" id="7631DB1D-7CF5-AF21-2468-734F59043622">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:08:22 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>champion_armor_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>18</beginValue>
+<endValue>47</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="magic_resist" id="3A26A018-1257-8CD1-3B90-7322DE4C03C0">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:09:21 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>champion_magic_resist_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>25</beginValue>
+<endValue>39</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="attack_damage" id="D03A854D-0087-9C59-B4D2-C6CDE5676BCB">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:09:40 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>champion_attack_damage_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>45</beginValue>
+<endValue>70</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F89E7868-15D3-3604-471C-6D6AEDF2A032" name="Champion PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:07:34 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7A0821FC-D876-3DCC-117D-7E65D02595EF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="2D8F0F40-2364-1A2E-FC4E-DCF61BD8B6EF" name="Champion_name_uk">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 22:12:47 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<newElementsIDs>3DBEE869-3A48-020E-662A-7EBAD7A334B0</newElementsIDs>
+<usedAttributes>
+<attributeRef>3DBEE869-3A48-020E-662A-7EBAD7A334B0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2361CFDF-013B-3ACB-2C24-9120B3FE5301" containerWithKeyObject="8BFF8FCF-9BB0-B6D4-5916-5F7C7A272EBD" localFKIndex="CB078953-D3C3-3D36-09B4-504AED56AA3D" name="Skin_Champion_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>D6A31F48-31FA-F44A-45DA-D5BEAE07363C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>Champion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1B8BB168-4BB8-3725-C7FA-32F713A08133</referredTableID>
+<keyObject>3102AA78-E05C-DD9C-0AE4-70B37FD6F760</keyObject>
+<referredKeyID>3102AA78-E05C-DD9C-0AE4-70B37FD6F760</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>champion_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

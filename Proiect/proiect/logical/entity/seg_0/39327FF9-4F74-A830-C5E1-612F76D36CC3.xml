@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="39327FF9-4F74-A830-C5E1-612F76D36CC3" name="Inventory">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:00:13 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="champion_chests" id="BFD90BD1-8504-639E-BA08-E1BA9B194396">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:34:20 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>inventory_ch_c_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="champion_chests &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="skin_chests" id="EEFA1258-CE18-ECFC-D1C4-D0AABCF96C54">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:35:04 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>inventory_sk_c_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="skin_chests &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="chest_keys" id="08D63EB1-36C8-4FE9-132E-69B49E17C552">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:35:17 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>inventory_chest_keys_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="chest_keys &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="key_fragments" id="93DD9F6A-C55F-C786-C627-70CF136E750C">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:35:29 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>inventory_key_fragments_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="key_fragments &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gemstones" id="08DB2CDB-4EB8-0173-66FC-4C240AA61F04">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:10:25 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>inventory_gemstones_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="gemstones &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="250E84E5-4D8A-FF2B-DBCE-E2AF5EC6C022">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 13:29:55 UTC</createdTime>
+<generatorID>07F432AB-C76D-F7DF-6FDE-52E74013B39B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<referedAttribute>804AD47F-13B9-13F4-82C6-F3E368F47CD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,243 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B069A86B-EEF6-DAF0-EDBA-17021F6BD685" name="Lol_User">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 15:59:05 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="804AD47F-13B9-13F4-82C6-F3E368F47CD4">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 13:29:41 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="8871F043-F0A4-C7BC-C70F-DA8E615FFA5A">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:03:44 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>user_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(name) &gt;= 5"/>
+</checkConstraint>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="0688491B-E046-951E-787B-AE085588EE07">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:04:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>user_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="summoner_name" id="A7909B04-A5E3-B251-B253-5630499A2B10">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:04:42 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>user_summoner_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(summoner_name) &gt;= 5"/>
+</checkConstraint>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lvl" id="0121F2A2-5AD6-768D-F180-595D18F554BD">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 22:30:08 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>user_lvl_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="lvl &gt;= 1"/>
+</checkConstraint>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rank_solo_duo" id="6CD03688-69CD-9E43-E693-8AD7D48EFFCB">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 22:32:40 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>user_rank_solo_duo_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="GM" description=""/>
+<valueDef value="M" description=""/>
+<valueDef value="U" description=""/>
+</listOfValues>
+<defaultValue>U</defaultValue>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>B1</beginValue>
+<endValue>B5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>D1</beginValue>
+<endValue>D5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>G1</beginValue>
+<endValue>G5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>P1</beginValue>
+<endValue>P5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>S1</beginValue>
+<endValue>S5</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="rank_flex" id="5A8029C0-E9C8-EC7D-2DDA-6366627F26C9">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 22:33:23 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>user_user_rank_flex</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<listOfValues>
+<valueDef value="C" description=""/>
+<valueDef value="GM" description=""/>
+<valueDef value="M" description=""/>
+<valueDef value="U" description=""/>
+</listOfValues>
+<defaultValue>U</defaultValue>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>B1</beginValue>
+<endValue>B5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>D1</beginValue>
+<endValue>D5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>G1</beginValue>
+<endValue>G5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>P1</beginValue>
+<endValue>P5</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>S1</beginValue>
+<endValue>S5</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="club_id" id="84391FD4-64AE-8324-7047-36A808B71123">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-23 10:24:07 UTC</createdTime>
+<generatorID>4A17C619-4467-EA9E-44B6-600F47AFBE4C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<referedAttribute>2050C3D3-1A3D-67E1-D880-C100C29AB8D9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DC47F54D-7127-DAA0-79BC-05A5C2A354F9" name="User PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:05:42 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>804AD47F-13B9-13F4-82C6-F3E368F47CD4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1F6A7481-CD08-9964-FFD3-014CB93B6D51" name="User_email_address_uk">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 12:31:46 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<newElementsIDs>0688491B-E046-951E-787B-AE085588EE07</newElementsIDs>
+<usedAttributes>
+<attributeRef>0688491B-E046-951E-787B-AE085588EE07</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="993A0B15-62FA-4139-1159-7C89513FFDFF" name="user_name_uk">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 13:30:12 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<newElementsIDs>8871F043-F0A4-C7BC-C70F-DA8E615FFA5A</newElementsIDs>
+<usedAttributes>
+<attributeRef>8871F043-F0A4-C7BC-C70F-DA8E615FFA5A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

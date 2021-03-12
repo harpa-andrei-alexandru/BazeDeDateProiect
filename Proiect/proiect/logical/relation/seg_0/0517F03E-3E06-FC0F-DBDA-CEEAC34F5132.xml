@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="user_champion" directorySegmentName="seg_0" id="0517F03E-3E06-FC0F-DBDA-CEEAC34F5132">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-19 22:26:42 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>are mai multi</nameOnSource>
+<nameOnTarget>apartin unui</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>B069A86B-EEF6-DAF0-EDBA-17021F6BD685</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D085FD67-B8A8-E927-F318-20093AA2234B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

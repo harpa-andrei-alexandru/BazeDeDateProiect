@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B8BB168-4BB8-3725-C7FA-32F713A08133" name="Champion">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>D085FD67-B8A8-E927-F318-20093AA2234B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="champion_id" id="4FA32819-F236-8DFD-E04D-2FF203FC718B">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>7A0821FC-D876-3DCC-117D-7E65D02595EF</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="champion_name" id="5A798D99-4CCA-34CE-9169-197395F9643A">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>3DBEE869-3A48-020E-662A-7EBAD7A334B0</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>champion_name_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(champion_name) &gt;= 3"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price_rp" id="11C06AD2-71F5-F7E1-C0D2-03CDF83E2617">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>10CEE32D-24A7-A35A-978E-BF4D526C2CEE</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>champion_price_rp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<listOfValues>
+<valueDef value="260" description=""/>
+<valueDef value="585" description=""/>
+<valueDef value="790" description=""/>
+<valueDef value="880" description=""/>
+<valueDef value="975" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price_blue_essence" id="9CF1C3EF-D953-9D2D-B45B-87E5002F6CAD">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>141F4E8C-EA2E-FAFF-8F45-6355DCE57B44</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>champion_price_blue_essence_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="1350" description=""/>
+<valueDef value="3150" description=""/>
+<valueDef value="450" description=""/>
+<valueDef value="4800" description=""/>
+<valueDef value="6300" description=""/>
+<valueDef value="7800" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_date" id="459BCD12-117B-51FD-90C2-A09038FCC739">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>2D5CFACC-801E-1C86-D985-8FF6BB1FA06E</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="health" id="C8467830-DFDC-4A71-E49D-F59DB5C15FF5">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>24A8CE13-04F6-63D3-5718-A9A6DDB8EE7E</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>champion_health_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>480</beginValue>
+<endValue>740</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="armor" id="44A8122A-38B7-7002-91F9-CC48E829E450">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>7631DB1D-7CF5-AF21-2468-734F59043622</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>champion_armor_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>18</beginValue>
+<endValue>47</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="magic_resist" id="EC8560F2-8D08-BD60-CE62-7CC8C247DB28">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>3A26A018-1257-8CD1-3B90-7322DE4C03C0</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>champion_magic_resist_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>25</beginValue>
+<endValue>39</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="attack_damage" id="C030F4A9-F321-6515-E988-982FD654DCF8">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>D03A854D-0087-9C59-B4D2-C6CDE5676BCB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>champion_attack_damage_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>45</beginValue>
+<endValue>70</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3102AA78-E05C-DD9C-0AE4-70B37FD6F760" name="Champion_PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>F89E7868-15D3-3604-471C-6D6AEDF2A032</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FA32819-F236-8DFD-E04D-2FF203FC718B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CEE7E9E-904C-67DF-74F2-54EEA759E119" name="Champion_champion_name_UN">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>2D8F0F40-2364-1A2E-FC4E-DCF61BD8B6EF</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A798D99-4CCA-34CE-9169-197395F9643A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

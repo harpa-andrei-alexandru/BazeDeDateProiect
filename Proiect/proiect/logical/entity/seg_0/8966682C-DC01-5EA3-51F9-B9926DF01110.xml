@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8966682C-DC01-5EA3-51F9-B9926DF01110" name="Skin">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:00:05 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="skin_id" id="55872C04-06DB-AB56-E691-7E1800CB0CC4">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-23 14:47:55 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="skin_name" id="30D2883B-C66D-61B1-FA4C-DF06E9EDFAE9">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:15:46 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="4D0C4CCB-FCE7-C419-7408-5B2CEC52DF37">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:17:35 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>skin_type_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Deluxe" description=""/>
+<valueDef value="Epic" description=""/>
+<valueDef value="Legacy" description=""/>
+<valueDef value="Legendary" description=""/>
+<valueDef value="Mythic" description=""/>
+<valueDef value="Standard" description=""/>
+<valueDef value="Timeworn" description=""/>
+<valueDef value="Ultimate" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price_orange_essence" id="532C3C94-DA82-5E85-6D90-E7BED769993A">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:24:39 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>skin_price_orange_essence_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="1050" description=""/>
+<valueDef value="1520" description=""/>
+<valueDef value="2150" description=""/>
+<valueDef value="220" description=""/>
+<valueDef value="2950" description=""/>
+<valueDef value="450" description=""/>
+<valueDef value="675" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price_rp" id="CE8B5757-206B-8435-E469-09BEA9336409">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:24:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<constraintName>skin_price_rp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1350" description=""/>
+<valueDef value="1820" description=""/>
+<valueDef value="2775" description=""/>
+<valueDef value="3250" description=""/>
+<valueDef value="520" description=""/>
+<valueDef value="750" description=""/>
+<valueDef value="975" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="release_date" id="CAF042F6-DC3A-9A59-45DC-D35905749917">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:16:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="champion_id" id="080C2373-EB20-1814-63DD-B86D60A59C0E">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-23 14:54:06 UTC</createdTime>
+<generatorID>D6A31F48-31FA-F44A-45DA-D5BEAE07363C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="true"/>
+</engineerTo>
+<referedAttribute>7A0821FC-D876-3DCC-117D-7E65D02595EF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="038F2ECE-99EC-7613-8D2F-52D6163BA344" name="Skin_name_uk">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-18 16:16:18 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<newElementsIDs>30D2883B-C66D-61B1-FA4C-DF06E9EDFAE9</newElementsIDs>
+<usedAttributes>
+<attributeRef>30D2883B-C66D-61B1-FA4C-DF06E9EDFAE9</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="86B22AFB-C101-73B4-ECCF-7F06D7F476C9" name="Skin PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-23 14:48:12 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5435D098-8FC9-CD11-EC07-1D762D87D764" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55872C04-06DB-AB56-E691-7E1800CB0CC4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,12 @@
+drop table user_champion;
+drop table user_skin;
+drop table skin;
+drop table champion;
+drop table inventory;
+drop table resources;
+drop table Lol_User;
+drop table club;
+drop sequence club_club_id_seq;
+drop sequence champion_champion_id_seq;
+drop sequence lol_user_user_id_seq;
+drop sequence skin_skin_id_seq;

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_skin_BRIU" directorySegmentName="seg_0" id="53A20B3C-03D2-5C07-FD83-68C1040F402B">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:20:21 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+	IF( :new.release_date >= SYSDATE )
+	THEN
+		RAISE_APPLICATION_ERROR( -20001,
+			'Data invalida: ' || TO_CHAR( :new.release_date, 'DD.MM.YYYY HH24:MI:SS' ) || ' trebuie sa fie mai mica decat data curenta.' );
+	END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>8BFF8FCF-9BB0-B6D4-5916-5F7C7A272EBD</table>
+</TriggerOraclev10g>

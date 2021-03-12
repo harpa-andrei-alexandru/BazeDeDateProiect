@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="266A2F56-EC02-75D5-2432-DBFC7B25A9C4" name="Inventory">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>39327FF9-4F74-A830-C5E1-612F76D36CC3</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="champion_chests" id="A037D6BC-5B42-D5D2-5C99-EA2EB3AAE96E">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>BFD90BD1-8504-639E-BA08-E1BA9B194396</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>inventory_ch_c_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="champion_chests &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="skin_chests" id="05F0E9B2-11B6-AC89-4BB1-EE6762E8EE86">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>EEFA1258-CE18-ECFC-D1C4-D0AABCF96C54</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>inventory_sk_c_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="skin_chests &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chest_keys" id="7AD1362C-1223-2411-E65F-6D5D8C783B2C">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>08D63EB1-36C8-4FE9-132E-69B49E17C552</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>inventory_chest_keys_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="chest_keys &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="key_fragments" id="2993055B-086D-E82B-8102-602FC6CB34C4">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>93DD9F6A-C55F-C786-C627-70CF136E750C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>inventory_key_fragments_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="key_fragments &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gemstones" id="F967F956-CD26-07A3-C3CB-F23764BC5A20">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>08DB2CDB-4EB8-0173-66FC-4C240AA61F04</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>inventory_gemstones_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="gemstones &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="A86BA6B6-A4E3-06EB-57BB-39600B2BF901">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>250E84E5-4D8A-FF2B-DBCE-E2AF5EC6C022</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C72AE54-0014-AD38-3EF7-DD12ED4C9193" referredColumn="6E5FEDA8-B790-2956-54FB-749AC5DFA0D9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33B16997-EE3A-5EC3-DB18-79AE830336A3" name="Inventory__IDX">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>07F432AB-C76D-F7DF-6FDE-52E74013B39B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A86BA6B6-A4E3-06EB-57BB-39600B2BF901"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F139FAA2-A4C9-695B-88F9-6388FF2383EB" name="Inventory_Lol_User_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>07F432AB-C76D-F7DF-6FDE-52E74013B39B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A86BA6B6-A4E3-06EB-57BB-39600B2BF901"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

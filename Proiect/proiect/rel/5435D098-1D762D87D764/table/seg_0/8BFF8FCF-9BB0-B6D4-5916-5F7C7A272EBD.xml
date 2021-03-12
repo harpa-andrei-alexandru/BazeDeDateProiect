@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BFF8FCF-9BB0-B6D4-5916-5F7C7A272EBD" name="Skin">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>8966682C-DC01-5EA3-51F9-B9926DF01110</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="skin_id" id="6BA1195E-3141-EC3B-895C-966B40698465">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>55872C04-06DB-AB56-E691-7E1800CB0CC4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="skin_name" id="3DE57651-CA2D-95CF-9A06-FA8F91C4C346">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>30D2883B-C66D-61B1-FA4C-DF06E9EDFAE9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="E026AC14-41FC-98BC-AD0D-79AD8BFC0C97">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>4D0C4CCB-FCE7-C419-7408-5B2CEC52DF37</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>skin_type_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="Deluxe" description=""/>
+<valueDef value="Epic" description=""/>
+<valueDef value="Legacy" description=""/>
+<valueDef value="Legendary" description=""/>
+<valueDef value="Mythic" description=""/>
+<valueDef value="Standard" description=""/>
+<valueDef value="Timeworn" description=""/>
+<valueDef value="Ultimate" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price_orange_essence" id="7180E2B6-A016-661F-921D-E318C6FAF13B">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>532C3C94-DA82-5E85-6D90-E7BED769993A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>skin_price_orange_essence_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="1050" description=""/>
+<valueDef value="1520" description=""/>
+<valueDef value="2150" description=""/>
+<valueDef value="220" description=""/>
+<valueDef value="2950" description=""/>
+<valueDef value="450" description=""/>
+<valueDef value="675" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price_rp" id="A16962E1-240B-6602-97FB-A1239D422F45">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>CE8B5757-206B-8435-E469-09BEA9336409</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<constraintName>skin_price_rp_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1350" description=""/>
+<valueDef value="1820" description=""/>
+<valueDef value="2775" description=""/>
+<valueDef value="3250" description=""/>
+<valueDef value="520" description=""/>
+<valueDef value="750" description=""/>
+<valueDef value="975" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="release_date" id="D20E8088-4A83-3DDD-5508-F295FEFC7CB3">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>CAF042F6-DC3A-9A59-45DC-D35905749917</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="champion_id" id="9503EC0B-0BA8-E843-5685-D3FFAA69F5AB">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>080C2373-EB20-1814-63DD-B86D60A59C0E</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2361CFDF-013B-3ACB-2C24-9120B3FE5301" referredColumn="4FA32819-F236-8DFD-E04D-2FF203FC718B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6B47B1F-DB90-C2D1-522B-0B3A65315743" name="Skin_PK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>86B22AFB-C101-73B4-ECCF-7F06D7F476C9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA1195E-3141-EC3B-895C-966B40698465"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5E4ED81-1BEE-2BC7-7E7D-821E151A13BF" name="Skin_skin_name_UN">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>038F2ECE-99EC-7613-8D2F-52D6163BA344</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DE57651-CA2D-95CF-9A06-FA8F91C4C346"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB078953-D3C3-3D36-09B4-504AED56AA3D" name="Skin_Champion_FK">
+<createdBy>andre</createdBy>
+<createdTime>2020-11-25 11:14:19 UTC</createdTime>
+<generatorID>D6A31F48-31FA-F44A-45DA-D5BEAE07363C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9503EC0B-0BA8-E843-5685-D3FFAA69F5AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
